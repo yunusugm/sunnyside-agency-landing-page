@@ -83,20 +83,9 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
   -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
-}
-
-@media screen and (max-width: 68.75em) {
-  html {
-    font-size: 87.5%;
-  }
-}
-
-@media screen and (max-width: 48em) {
-  html {
-    font-size: 75%;
-  }
 }
 
 .container {
