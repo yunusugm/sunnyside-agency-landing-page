@@ -8,15 +8,14 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 62.5%;
 
-  // @media screen and (max-width: 68.75em) {
-  //   font-size: 87.5%;
-  // }
+  @media screen and (max-width: 68.75em) {
+    font-size: 87.5%;
+  }
 
-  // @media screen and (max-width: 48em) {
-  //   font-size: 75%;
-  // }
+  @media screen and (max-width: 48em) {
+    font-size: 75%;
+  }
 
   // @media screen and (max-width: 34.375em) {
   //   font-size: 62.5%;
