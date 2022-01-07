@@ -1,0 +1,58 @@
+.brand {
+  &__content {
+    // background-color: $soft-red;
+    grid-row: 2 / 3;
+    grid-column: full-start / col-end 4;
+    padding-left: 6rem;
+    padding-right: 11rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width: 48em) {
+      padding-left: 4rem;
+      padding-right: 6rem;
+    }
+
+    @media screen and (max-width: 34.375em) {
+      grid-column: full-start / full-end;
+      grid-row: 3 / 4;
+      text-align: center;
+    }
+  }
+
+  &__image {
+    grid-row: 2 / 3;
+    grid-column: col-start 5 / full-end;
+
+    @media screen and (max-width: 34.375em) {
+      grid-column: full-start / full-end;
+    }
+  }
+
+  &__heading {
+    color: $very-dark-desaturated-blue;
+    margin-bottom: 2.5rem;
+  }
+
+  &__paragraph {
+    margin-bottom: 2.5rem;
+  }
+
+  &__link {
+    &::after {
+      background-color: $yellow;
+    }
+
+    @media screen and (max-width: 34.375em) {
+      margin: 0 auto;
+    }
+  }
+}
+
+.break {
+  @media screen and (max-width: 48em) {
+    display: none;
+  }
+}

@@ -1,0 +1,54 @@
+%content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+%background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 3rem;
+}
+
+.design {
+  &__graphic {
+    grid-row: 4 / 5;
+    grid-column: full-start / col-end 4;
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+
+    @extend %content;
+    @extend %background;
+
+    @media screen and (max-width: 34.375em) {
+      grid-column: full-start / full-end;
+      grid-row: 6 / 7;
+    }
+  }
+
+  &__photography {
+    grid-row: 4 / 5;
+    grid-column: col-start 5 / full-end;
+    background-image: url(../images/desktop/image-photography.jpg);
+
+    @extend %content;
+    @extend %background;
+
+    @media screen and (max-width: 34.375em) {
+      grid-column: full-start / full-end;
+      grid-row: 7 / 8;
+    }
+  }
+
+  &__heading {
+    color: $dark-desaturated-cyan;
+    margin-bottom: 1rem;
+  }
+
+  &__paragraph {
+    color: $dark-desaturated-cyan;
+    width: 50%;
+  }
+}

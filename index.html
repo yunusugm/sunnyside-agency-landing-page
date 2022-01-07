@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="container">
+    <!-- HEADER -->
+    <header class="header">
+      <!-- NAVIGATION -->
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <img src="images/logo.svg" alt="logo" class="logo" />
+        </div>
+        <ul class="navbar__item">
+          <li class="navbar__list"><a href="#about" class="navbar__link">About</a></li>
+          <li class="navbar__list"><a href="#services" class="navbar__link">Services</a></li>
+          <li class="navbar__list"><a href="#testimoni" class="navbar__link">Testimonials</a></li>
+          <li class="navbar__list"><a href="#" class="navbar__btn">Contact</a></li>
+        </ul>
+
+        <div class="menu">
+          <input
+            type="checkbox"
+            name="show"
+            class="menu__checkbox"
+          />
+    
+          <label for="show" class="menu__button">
+            <span class="menu__icon">&nbsp;</span>
+          </label>
+      </nav>
+      <!-- HEADER CONTENT -->
+      <h1 class="heading">We are creatives</h1>
+
+      <a href="#" class="header__icon" id="arrowDown">
+        <img src="images/icon-arrow-down.svg" alt="Arrow Down" class="arrow"
+      /></a>
+    </header>
+
+    <!-- BRAND -->
+    <div class="brand__content">
+      <h2 class="sub-heading brand__heading">
+        Transform your <br class="break" />
+        brand
+      </h2>
+      <p class="paragraph brand__paragraph">
+        We are a full-service creative agency specializing in helping brands grow fast. Engage your
+        clients through compelling visuals that do most of the marketing for you.
+      </p>
+      <a href="#" class="learn-link brand__link">Learn more</a>
+    </div>
+
+    <div class="brand__image" id="targetArrow">
+      <img
+        srcset="images/mobile/image-transform.jpg 1x, images/desktop/image-transform.jpg 2x"
+        alt="Egg"
+        class="side-images"
+      />
+    </div>
+
+    <!-- AUDIENCE -->
+    <div class="audience__content">
+      <h2 class="sub-heading audience__heading">Stand out to the right audience</h2>
+      <p class="paragraph audience__paragraph">
+        Using a collaborative formula of designers, researchers, photographers, videographers, and
+        copywriters, we’ll build and extend your brand in digital places.
+      </p>
+
+      <a href="#" class="learn-link audience__link">Learn more</a>
+    </div>
+
+    <div class="audience__image" id="about">
+      <img
+        srcset="images/mobile/image-stand-out.jpg 1x, images/desktop/image-stand-out.jpg 2x"
+        alt="Glass"
+        class="side-images"
+      />
+    </div>
+
+    <!-- DESIGN -->
+    <div class="design__graphic" id="services">
+      <h3 class="tertiary-heading design__heading">Graphic design</h3>
+      <p class="paragraph design__paragraph">
+        Great design makes you memorable. We deliver artwork that underscores your brand message and
+        captures potential clients’ attention.
+      </p>
+    </div>
+
+    <div class="design__photography">
+      <h3 class="tertiary-heading design__heading">Photography</h3>
+      <p class="paragraph design__paragraph">
+        Increase your credibility by getting the most stunning, high-quality photos that improve
+        your business image.
+      </p>
+    </div>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial" id="testimoni">
+      <h3 class="tertiary-heading testimonial__heading">Client testimonials</h3>
+      <div class="testimonial__box">
+        <div class="testimoni">
+          <img src="images/image-emily.jpg" alt="emily" class="testimoni__person" />
+          <p class="paragraph testimoni__paragraph">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and
+            deadlines were always hit.
+          </p>
+          <h4 class="testimoni__name">Emily R.</h4>
+          <p class="testimoni__job">Marketing Director</p>
+        </div>
+        <div class="testimoni">
+          <img src="images/image-thomas.jpg" alt="thomas" class="testimoni__person" />
+          <p class="paragraph testimoni__paragraph">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+            satisfying and enjoyable experience.
+          </p>
+          <h4 class="testimoni__name">Thomas S.</h4>
+          <p class="testimoni__job">Chief Operating Officer</p>
+        </div>
+        <div class="testimoni">
+          <img src="images/image-jennie.jpg" alt="jennie" class="testimoni__person" />
+          <p class="paragraph testimoni__paragraph">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+            Highly recommended!
+          </p>
+          <h4 class="testimoni__name">Jennie F.</h4>
+          <p class="testimoni__job">Business Owner</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery">
+      <div class="gallery__box">
+        <img
+          srcset="images/mobile/image-gallery-milkbottles.jpg 1x, images/desktop/image-gallery-milkbottles.jpg 2x"
+          alt="milkbottles"
+          class="gallery__image"
+        />
+      </div>
+      <div class="gallery__box">
+        <img srcset="images/mobile/image-gallery-orange.jpg 1x, images/desktop/image-gallery-orange.jpg 2x" alt="orange" class="gallery__image" />
+      </div>
+      <div class="gallery__box">
+        <img srcset="images/mobile/image-gallery-cone.jpg 1x, images/desktop/image-gallery-cone.jpg 2x" alt="cone" class="gallery__image" />
+      </div>
+      <div class="gallery__box">
+        <img
+          srcset="
+            images/mobile/image-gallery-sugar-cubes.jpg 1x,
+            images/desktop/image-gallery-sugarcubes.jpg 2x
+          "
+          alt="sugarcubes"
+          class="gallery__image"
+        />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="images/footer-logo.svg" alt="logo" class="logo-svg" />
+      </div>
+
+      <ul class="footer__item">
+        <li class="footer__list"><a href="" class="footer__link">About</a></li>
+        <li class="footer__list"><a href="" class="footer__link">Services</a></li>
+        <li class="footer__list"><a href="" class="footer__link">Projects</a></li>
+      </ul>
+
+      <div class="footer__social">
+        <a href="" class="footer__icon"
+          ><i class="uil uil-facebook icons"></i></a>
+        <a href="" class="footer__icon"
+          ><i class="uil uil-instagram icons"></i></a>
+        <a href="" class="footer__icon"
+          ><i class="uil uil-twitter icons"></i></a>
+        <a href="" class="footer__icon"
+          ><i class="uil uil-discord icons"></i></a>
+      </div>
+
+      <div class="attribution">
+      Code with ❤ by <a href="https://github.com/frontendnus" target="_blank">Yunus Alif</a>
+        </div>
+    </footer>
+
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>

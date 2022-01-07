@@ -1,0 +1,55 @@
+.testimonial {
+  grid-row: 5 / 6;
+  grid-column: center-start / center-end;
+  padding: 5rem 0;
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 5rem;
+  }
+
+  &__heading {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: $grayish-blue;
+  }
+
+  @media screen and (max-width: 34.375em) {
+    grid-row: 8 / 9;
+  }
+}
+
+.testimoni {
+  text-align: center;
+
+  &__person {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+  }
+
+  &__paragraph {
+    color: $very-dark-grayish-blue;
+    margin-bottom: 3.5rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__name {
+    margin-bottom: 0.5rem;
+    font-family: "Fraunces", serif;
+    font-weight: map-get($font-weight, fraunces-bold);
+    color: $very-dark-desaturated-blue;
+  }
+
+  &__job {
+    color: $grayish-blue;
+    font-size: 0.75rem;
+  }
+}
