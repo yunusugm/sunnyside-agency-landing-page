@@ -818,17 +818,17 @@ html {
   top: 0.8rem;
 }
 
-.menu__checkbox:checked + .menu__button .menu__icon {
+.menu__checkbox.close + .menu__button .menu__icon {
   background-color: transparent;
 }
 
-.menu__checkbox:checked + .menu__button .menu__icon::before {
+.menu__checkbox.close + .menu__button .menu__icon::before {
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
   top: 0;
 }
 
-.menu__checkbox:checked + .menu__button .menu__icon::after {
+.menu__checkbox.close + .menu__button .menu__icon::after {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
   top: 0;

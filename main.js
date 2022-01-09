@@ -25,4 +25,13 @@ iconArrow.addEventListener("click", function () {
 
 hamburger.addEventListener("click", function () {
   navbar.classList.toggle("show");
+  hamburger.classList.toggle("close");
+});
+
+const navbarLinks = document.querySelectorAll(".navbar__link");
+navbarLinks.forEach(navbarLink => {
+  navbarLink.addEventListener("click", function () {
+    navbar.classList.remove("show");
+    hamburger.classList.remove("close");
+  });
 });
